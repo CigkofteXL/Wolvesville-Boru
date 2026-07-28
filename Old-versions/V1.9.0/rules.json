@@ -1,0 +1,19 @@
+[
+    {
+        "id": 1,
+        "priority": 1,
+        "action": {
+            "type": "modifyHeaders",
+            "responseHeaders": [
+                { "header": "content-security-policy", "operation": "remove" },
+                { "header": "x-content-security-policy", "operation": "remove" },
+                { "header": "content-security-policy-report-only", "operation": "remove" },
+                { "header": "content-type", "operation": "set", "value": "text/html; charset=utf-8" }
+            ]
+        },
+        "condition": {
+            "urlFilter": "*://*.wolvesville.com/*",
+            "resourceTypes": ["main_frame", "sub_frame", "xmlhttprequest", "websocket"]
+        }
+    }
+]
