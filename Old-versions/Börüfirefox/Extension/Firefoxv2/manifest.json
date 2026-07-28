@@ -1,0 +1,61 @@
+{
+    "manifest_version": 3,
+    "name": "BÖRÜ",
+    "version": "1.2.0",
+    "description": "BÖRÜ for wolvesville by Varietyshopware © 2025",
+    "icons": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png"
+    },
+
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "boru@varietyshopware.com",
+            "strict_min_version": "109.0"
+        }
+    },
+
+    "content_scripts": [
+        {
+            "matches": [ "*://*.wolvesville.com/*" ],
+            "js": [ "inject.js", "content.js" ],
+            "run_at": "document_start"
+        }
+    ],
+
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "lib/defpayload.js",
+                "lib/payload.js",
+                "lib/notpayload.js",
+                "lib/abc.js",
+                "intercept.js"
+            ],
+            "matches": [ "*://*.wolvesville.com/*" ]
+        }
+    ],
+
+    "background": {
+        "scripts": [ "background.js" ]
+    },
+
+    "permissions": [
+        "storage",
+        "scripting",
+        "tabs"
+    ],
+
+    "host_permissions": [
+        "*://*.wolvesville.com/*",
+        "http://localhost:3169/*",
+        "https://raw.githubusercontent.com/*"
+    ],
+
+    "action": {
+        "default_icon": {
+            "16": "icons/icon16.png",
+            "48": "icons/icon48.png"
+        }
+    }
+}
