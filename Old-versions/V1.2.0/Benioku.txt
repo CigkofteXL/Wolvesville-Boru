@@ -1,0 +1,56 @@
+# ***Börü KURULUM REHBERİ***
+
+
+
+## **BİLGİLENDİRME**
+
+
+
+Börü kurulum rehberine hoş geldiniz uzun süredir bot satmıyorum :D anlatmam gereken kısımları burda atlamış olabilirim itemden sorunlarınızı yazarsanız daha doğru olur
+
+Bide Önemli bilgilendirmeyi okuyun önemli!!
+
+
+
+## **Börü NASIL KURULUR**
+
+
+Chrome tabanlı tarayıcılar için(opera sıkıntılı önermiyorum)
+
+bu metni okuyorsanız klasörü çıkartmışsınızdır 2 txt dosyası ve Chrome adlı klasör olması lazım
+(firefox klasörü sizi ilgilendirmiyor)
+
+
+* Tarayıcıyı açın eklentiler bölümü(yapboz simgesi) ne gidin
+* Geliştirici modu açın ( 3 çizgi sol altta olur genelde edgede chromeda sağüstteydi sanki)
+* Paketlenmemiş uzantı/öğe yükle butonuna basın
+* Açılan sekmede Chrome klasörünü seçin uyarı falan görürseniz aldırmayın 
+*1 Otomatik kurulup açılır Wolvesville.coma gidin oyunun dilini İngilizce yapın
+*2 Ayarlarda game kısmında invert layout harici hepsini açın
+*3 Ayarlarda general kısmındakilerin hepsini açın
+*4 Yüzen adanın ayarlarına gidin custom games ve replay yazanı açın
+* tebrikler artık oyuna girebilirsiniz
+
+Firefox tabanlı tarayıcılar için
+
+Xpi dosyasına tarayıcı açıkken çift tıklayın yeterli kur diyince kurulur oyun içi ve yüzen adanın ayarları için bkz. 1 2 3 4 
+dipnot ayrı txt dosyası var firefox içinde onuda okuyun
+
+## **Önemli bilgilendirmeler**
+4xp methodu kimseyle paylaşmayınki fix yemesin aq önceki linki paylaşan andaval 40 kez paylaşmış sonra fix yiyince niye fix yedi hocam paylaşmayın diyorsam bi bildiğim vardır 
+hocam aynı anda 2 farklı tarayıcıdan aynı hesaba girin bir tarayıcıda sadece asya vill winlerine girin diğerinde sadece avrupa (Asya = A Avrupa =E) yazan sunuculara girin botu açın botun xp ile birlikte 4x xp oluyor
+
+Hojamlar dlcde yenilenip çıkacak free versiyon olmayacak içerisinde farklı farklı programlar olacak bu programa aylık abonelik ödeyeceksiniz çıktığında duyuru atıcam sağlıcakla kalın
+
+
+
+**BOTLA İLGİLİ GELİŞMELERDEN HABERDAR OLMAK İÇİN** [**DİSCORD**](https://discord.gg/eTAXD554Ab) **\&** [**TÜM ADRESLERİMİZ**](https://linktr.ee/varietyshoptr)
+
+
+
+**Botu benden başka satanı görürseniz söyleyin lütfen <3 he bu arada botu beğenirseniz favorilere eklemeyi beni takip etmeyi ve değerlendirmenizi 10 yapmanızı unutmayın <3**
+
+
+
+**VARİETYSHOPWARE \& BÖRÜ 2025** © **tüm hakları saklıdır**
+
