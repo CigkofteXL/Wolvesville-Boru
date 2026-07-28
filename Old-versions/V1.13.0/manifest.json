@@ -1,0 +1,70 @@
+{
+  "manifest_version": 3,
+  "name": "Börü Core",
+  "version": "1.13.0",
+  "description": "Börü yapımcısı : varietyshop.com.tr",
+  "incognito": "split",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.wolvesville.com/*"],
+      "js": ["ajan.js"],
+      "run_at": "document_start",
+      "world": "MAIN"
+    },
+    {
+      "matches": ["*://*.wolvesville.com/*"],
+      "js": ["inject.js"],
+      "run_at": "document_start"
+    }
+  ],
+
+  "web_accessible_resources": [
+    {
+      "resources": [
+          "lib/defpayload.js", 
+          "lib/notpayload.js", 
+          "icons/*" 
+      ],
+      "matches": ["*://*.wolvesville.com/*"],
+      "use_dynamic_url": true
+    }
+  ],
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "permissions": [
+    "storage",
+    "unlimitedStorage",
+    "management",
+    "scripting",
+    "debugger",
+    "tabs",
+    "declarativeNetRequest",
+    "declarativeNetRequestWithHostAccess",
+    "browsingData"
+  ],
+
+  "host_permissions": ["<all_urls>"],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+  "action": {
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png"
+    }
+  }
+}

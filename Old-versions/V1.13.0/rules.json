@@ -1,0 +1,85 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "modifyHeaders",
+      "responseHeaders": [
+        { "header": "content-security-policy", "operation": "remove" },
+        { "header": "x-content-security-policy", "operation": "remove" },
+        { "header": "content-security-policy-report-only", "operation": "remove" },
+        { "header": "content-type", "operation": "set", "value": "text/html; charset=utf-8" }
+      ]
+    },
+    "condition": {
+      "urlFilter": "*://*.wolvesville.com/*",
+      "resourceTypes": ["main_frame", "sub_frame", "xmlhttprequest", "websocket"]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 100,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "sentry.io",
+      "resourceTypes": ["xmlhttprequest", "script", "ping"]
+    }
+  },
+  {
+    "id": 3,
+    "priority": 100,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "google-analytics.com",
+      "resourceTypes": ["xmlhttprequest", "script", "ping", "image"]
+    }
+  },
+  {
+    "id": 4,
+    "priority": 100,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "app-measurement.com",
+      "resourceTypes": ["xmlhttprequest", "script", "ping"]
+    }
+  },
+  {
+    "id": 5,
+    "priority": 100,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "firebaselogging-pa.googleapis.com",
+      "resourceTypes": ["xmlhttprequest", "ping"]
+    }
+  },
+  {
+    "id": 6,
+    "priority": 100,
+    "action": {
+      "type": "redirect",
+      "redirect": { "url": "https://www.wolvesville.com" }
+    },
+    "condition": {
+      "urlFilter": "*://boru.ville/*",
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 7,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "sentry_key",
+      "resourceTypes": ["xmlhttprequest", "ping", "script"]
+    }
+  },
+   {
+    "id": 8,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "https://cdn2.wolvesville.com/introAnimations/bp48-dino.wide.lottie",
+      "resourceTypes": ["xmlhttprequest", "ping", "script"]
+    }
+  }
+]
