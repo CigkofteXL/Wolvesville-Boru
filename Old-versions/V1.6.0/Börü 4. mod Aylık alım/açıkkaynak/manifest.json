@@ -1,0 +1,79 @@
+{
+  "manifest_version": 3,
+  "name": "BÖRÜ",
+  "version": "1.6.0",
+  "description": "BÖRÜ for wolvesville by Varietyshopware",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png"
+  },
+
+    "content_scripts": [
+      {
+        "matches": ["*://*.wolvesville.com/*"],
+        "js": ["inject.js"],
+        "run_at": "document_start",
+        "all_frames": true  
+      },
+      {
+      "matches": ["*://*.wolvesville.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle",
+      "all_frames": true  
+    }
+    ],
+
+  "web_accessible_resources": [
+    {
+        "resources": [
+            "icons/borubebek.png",
+            "lib/defpayload.js",
+            "lib/payload.js",
+            "lib/notpayload.js",
+            "lib/abc.js",
+            "intercept.js"
+        ],
+      "matches": ["*://*.wolvesville.com/*"]
+    }
+  ],
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "permissions": [
+    "storage",
+    "unlimitedStorage",  
+    "scripting",
+    "debugger",
+    "tabs",
+    "declarativeNetRequest", 
+    "declarativeNetRequestWithHostAccess"
+  ],
+
+    "host_permissions": [
+        "*://*.wolvesville.com/*",
+        "https://raw.githubusercontent.com/*",
+        "*://discord.com/*",      
+       "*://discordapp.com/*",
+       "https://*.firebasedatabase.app/*",
+       "https://translate.googleapis.com/*",
+       "https://*.peerjs.com/*", 
+        "https://unpkg.com/*"    
+    ],
+    "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+  "action": {
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png"
+    }
+  }
+}
